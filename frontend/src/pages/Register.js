@@ -1,15 +1,30 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-const Register = () => {
+const Register = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Implement registration logic here
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+    try {
+      const response = await axios.post('/api/register', { email, password });
+      const token = response.data.token;
+      // Store token in local storage
+      localStorage.setItem('token', token);
+      // Call onLogin callback to update authentication state
+      onLogin(token);
+    } catch (error) {
+      setError(error.response.data.message);
+    }
   };
 
   return (

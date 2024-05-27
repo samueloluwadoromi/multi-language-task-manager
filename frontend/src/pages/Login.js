@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-const Login = () => {
+const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Implement authentication logic here
+    try {
+      const response = await axios.post('/api/login', { email, password });
+      const token = response.data.token;
+      // Store token in local storage
+      localStorage.setItem('token', token);
+      // Call onLogin callback to update authentication state
+      onLogin(token);
+    } catch (error) {
+      setError(error.response.data.message);
+    }
   };
 
   return (
