@@ -1,6 +1,6 @@
 // Data/AppDbContext.cs
 using Microsoft.EntityFrameworkCore;
-using dotnet_api.Models;
+using TaskEntity = dotnet_api.Models.Task; // Alias to avoid conflict
 
 namespace dotnet_api.Data
 {
@@ -8,6 +8,6 @@ namespace dotnet_api.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Task> Tasks { get; set; }
+        public DbSet<TaskEntity> Tasks { get; set; }
     }
 }
