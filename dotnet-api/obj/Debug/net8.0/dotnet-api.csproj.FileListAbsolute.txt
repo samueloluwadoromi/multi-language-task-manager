@@ -1,0 +1,8 @@
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.csproj.AssemblyReference.cache
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.AssemblyInfoInputs.cache
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.AssemblyInfo.cs
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.csproj.CoreCompileInputs.cache
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ileri\Desktop\Portfolio Project\multi-language-task-manager\dotnet-api\obj\Debug\net8.0\dotnet-api.sourcelink.json
