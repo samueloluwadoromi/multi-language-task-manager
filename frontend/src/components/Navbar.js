@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import '../styling/navbar.css'
 
 const Navbar = ({ isAuthenticated, onLogout }) => {
     return(

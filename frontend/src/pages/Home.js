@@ -1,26 +1,28 @@
 import React from 'react';
+import '../styling/home.css';
 
-
-function Home() {
+const Home = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Welcome to Your Task Manager</h1>
       <p>
         Your Task Manager is a simple and intuitive application designed to help you organize your tasks and
         stay productive. Whether you're managing personal tasks or collaborating with a team, our task manager
         has got you covered.
       </p>
-      <div>
-        <h2>Key Features</h2>
-        <ul>
-          <li>Easy task creation and management</li>
-          <li>Priority and due date settings</li>
-          <li>User-friendly interface</li>
-        </ul>
+      <div className="featured-content">
+        <div className="feature">
+          <h2>Easy Task Management</h2>
+          <p>Effortlessly create, organize, and prioritize your tasks.</p>
+        </div>
+        <div className="feature">
+          <h2>Stay Productive</h2>
+          <p>Set due dates and reminders to stay on top of your tasks.</p>
+        </div>
+        {/* Add more featured content as needed */}
       </div>
-      <button>Get Started</button>
     </div>
   );
-}
+};
 
 export default Home;
